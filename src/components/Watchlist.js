@@ -15,7 +15,6 @@ export default function Watchlist() {
     }
 
     const moviesOnWatchlist = allStorage()
-    console.log(moviesOnWatchlist)
 
     return (
         moviesOnWatchlist.map(function(movie) {
