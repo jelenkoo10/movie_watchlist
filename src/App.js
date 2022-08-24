@@ -40,7 +40,7 @@ export default function App() {
                 </h3>
             </header>
             <div className="form">
-                <input type="search" id="input" placeholder="Search..." onChange={changeInput} onSearch={() => setIsClicked(false)} /> 
+                <input type="search" id="input" placeholder="Search..." autoComplete="off" onChange={changeInput} onSearch={() => setIsClicked(false)} /> 
                 <button type="submit" onClick={() => setIsClicked(true)}>Search</button>
             </div> 
             {display == "watchlist" ? <Watchlist /> :
