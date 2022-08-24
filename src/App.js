@@ -11,7 +11,7 @@ export default function App() {
 
     React.useEffect(function() {
         if (display == "movies") {
-            fetch(`http://www.omdbapi.com/?apikey=1c691491&t=${userInput}`)
+            fetch(`https://www.omdbapi.com/?apikey=1c691491&t=${userInput}`)
             .then(res => res.json())
             .then(data => setMovieObject(data))
         }
